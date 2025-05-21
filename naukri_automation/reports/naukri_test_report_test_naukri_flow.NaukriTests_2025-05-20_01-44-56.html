@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naukri Automation Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Naukri Automation Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-05-20 01:44:56</p>
+                <p class='attribute'><strong>Duration: </strong>4.26 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>test_naukri_flow.NaukriTests</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_login_and_profile_check</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF601DDCF65+75717]
+	GetHandleVerifier [0x00007FF601DDCFC0+75808]
+	(No symbol) [0x00007FF601BA8F9A]
+	(No symbol) [0x00007FF601BFF4C6]
+	(No symbol) [0x00007FF601BFF77C]
+	(No symbol) [0x00007FF601C52577]
+	(No symbol) [0x00007FF601C273BF]
+	(No symbol) [0x00007FF601C4F39C]
+	(No symbol) [0x00007FF601C27153]
+	(No symbol) [0x00007FF601BF0421]
+	(No symbol) [0x00007FF601BF11B3]
+	GetHandleVerifier [0x00007FF6020DD74D+3223469]
+	GetHandleVerifier [0x00007FF6020D7CF2+3200338]
+	GetHandleVerifier [0x00007FF6020F5B23+3322755]
+	GetHandleVerifier [0x00007FF601DF6A3A+180890]
+	GetHandleVerifier [0x00007FF601DFE13F+211359]
+	GetHandleVerifier [0x00007FF601DE52B4+109332]
+	GetHandleVerifier [0x00007FF601DE5462+109762]
+	GetHandleVerifier [0x00007FF601DCBA79+4825]
+	BaseThreadInitThunk [0x00007FFA86DE7374+20]
+	RtlUserThreadStart [0x00007FFA87EDCC91+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Downloads\naukri_automation\tests\test_naukri_flow.py", line 17, in test_login_and_profile_check
+    login.login(config.USERNAME, config.PASSWORD)
+  File "D:\Downloads\naukri_automation\pages\login_page.py", line 9, in login
+    self.driver.find_element(By.LINK_TEXT, "Login").click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\naukri_automation\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\naukri_automation\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+  File "D:\Downloads\naukri_automation\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF601DDCF65+75717]
+	GetHandleVerifier [0x00007FF601DDCFC0+75808]
+	(No symbol) [0x00007FF601BA8F9A]
+	(No symbol) [0x00007FF601BFF4C6]
+	(No symbol) [0x00007FF601BFF77C]
+	(No symbol) [0x00007FF601C52577]
+	(No symbol) [0x00007FF601C273BF]
+	(No symbol) [0x00007FF601C4F39C]
+	(No symbol) [0x00007FF601C27153]
+	(No symbol) [0x00007FF601BF0421]
+	(No symbol) [0x00007FF601BF11B3]
+	GetHandleVerifier [0x00007FF6020DD74D+3223469]
+	GetHandleVerifier [0x00007FF6020D7CF2+3200338]
+	GetHandleVerifier [0x00007FF6020F5B23+3322755]
+	GetHandleVerifier [0x00007FF601DF6A3A+180890]
+	GetHandleVerifier [0x00007FF601DFE13F+211359]
+	GetHandleVerifier [0x00007FF601DE52B4+109332]
+	GetHandleVerifier [0x00007FF601DE5462+109762]
+	GetHandleVerifier [0x00007FF601DCBA79+4825]
+	BaseThreadInitThunk [0x00007FFA86DE7374+20]
+	RtlUserThreadStart [0x00007FFA87EDCC91+33]
+
+2025-05-20 01:45:07,025 - INFO - Starting test: Login and Profile Flow
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 4.26 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
